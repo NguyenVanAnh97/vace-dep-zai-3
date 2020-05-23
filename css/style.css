@@ -272,7 +272,7 @@ i {
 
 .grid-list-product {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 25% 25% 25% 25%;
     grid-column-gap: 20px;
     margin-top: 40px;
 }
@@ -467,25 +467,20 @@ i {
 }
 
 
-@media only screen and (max-width: 480px)  and (min-width: 768px) {
+/* @media only screen and (max-width: 480px)  and (min-width: 768px) {
    
-}
+} */
 
 
-@media only screen and (max-width: 600px  ) {
+/* ----> responsive only to screen moblie-device <----*/
+
+
+@media only screen and (min-width: 480px) and (max-width: 778px) {
+
     .grid-list-category {
-        display: block;
+        grid-template-columns: 100%;
+        padding: 0 20px;
     }
-
-    .list-menu {
-        flex-direction: column;
-    }
-
-    
-}
-
-
-@media only screen and (max-width: 800px  ) {
 
     .contact-info {
         display: none;
@@ -496,19 +491,41 @@ i {
         margin: 0 20px;
     }
 
-    .grid-feature-box{
-        display: block;
-        left: 20px;
-    }
-
     .nav-menu .list-menu {
         display: none;
     }
 
-}
 
+    .grid-feature-box{
+        grid-template-columns: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+    } 
 
-@media only screen and (min-width: 480px) and (max-width: 778px) {
+    .info-list {
+        text-align: center;
+    }
+
+    .add-cart {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .info-list > h2 {
+        text-align: center;
+    }
+
+    .name-post {
+        font-size: 15px;
+    }
+
+    .text-transform {
+        font-size: 15vh!important;
+    }
+    .box {
+        margin-bottom: 20px;
+    }
+
     .nav-menu .list-menu {
         display: none;
     }
@@ -519,7 +536,7 @@ i {
 
     .flex-header-top {
        display: block;
-        
+        margin: 15px 10px;
     }
 
     .flex-footer-top {
@@ -528,6 +545,28 @@ i {
 
     .flex-footer-top > div{
         margin: 20px;
+    }
+
+    .grid-list-product {
+        grid-template-columns: 48% 48%;
+        padding: 0 20px;
+    }
+
+    .grid-item-03 {
+        grid-template-columns: 100%;
+        padding: 0 20px;
+    }
+
+    .grid-item-03 > div {
+        margin-bottom: 20px;
+    }
+
+    .ttl-post {
+        font-size: 20px;
+    }
+
+    .flex-header-botton {
+        margin: 0 10px;
     }
 }
 

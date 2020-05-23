@@ -11,5 +11,7 @@
         });
       }
     });
+
+    new WOW().init();
   })(jQuery);
   
